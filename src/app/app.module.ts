@@ -7,7 +7,6 @@ import {
 } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatMenuModule } from '@angular/material/menu';
-import { ColorSketchModule } from 'ngx-color/sketch';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
 import { AppComponent } from './app.component';
@@ -31,7 +30,6 @@ import { CardComponent } from './components/card/card.component';
     ReactiveFormsModule,
     MatDialogModule,
     MatMenuModule,
-    ColorSketchModule,
     DragDropModule,
   ],
   providers: [],
