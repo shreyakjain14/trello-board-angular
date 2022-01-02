@@ -1,0 +1,51 @@
+.container {
+  background-color: aquamarine;
+  padding: 2rem;
+  font-family: "Space Mono", monospace;
+}
+
+.heading {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-family: "Chivo", sans-serif;
+}
+
+.button {
+  padding: 0.7rem;
+  border: none;
+  color: white;
+  background-color: rgb(34, 173, 216);
+  font-family: "Orbitron", sans-serif;
+}
+
+.button:hover {
+  background-color: green;
+}
+
+.submitBtn:disabled {
+  background-color: gray;
+}
+
+.colorLabel {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+::ng-deep .app-color-picker {
+  position: relative;
+  top: 0.5rem;
+}

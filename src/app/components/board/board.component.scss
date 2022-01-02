@@ -1,0 +1,25 @@
+.container {
+  margin-right: 1vw;
+  padding: 1rem;
+  margin-bottom: 2vh;
+  min-width: 15rem;
+  overflow-x: auto;
+  max-width: 25rem;
+  .heading {
+    padding-bottom: 0.7rem;
+    font-family: "Roboto Slab", serif;
+    color: black;
+    font-size: 1.6rem;
+  }
+
+  .menu-btn {
+    float: right;
+    height: 1.5rem;
+    width: 2rem;
+    border: none;
+    background-color: inherit;
+
+    .three-dots-img {
+    }
+  }
+}

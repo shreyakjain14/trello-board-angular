@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(0, 121, 191);
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+  align-items: center;
+
+  .board-btn {
+    padding: 0.6rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-weight: bold;
+    display: flex;
+
+    .board-img {
+      height: 1rem;
+      width: 1rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .heading {
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    user-select: none;
+  }
+}

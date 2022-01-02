@@ -1,0 +1,42 @@
+<form [formGroup]="form" class="container" (ngSubmit)="submit(form)">
+  <h1 mat-dialog-title class="heading">
+    {{ data.isBoard ? 'Create' : 'Add'}} New {{ data.isBoard ? 'Board' :
+    'Card'}}
+  </h1>
+  <mat-dialog-content>
+    <div class="inputField">
+      <label for="name">Enter {{ data.isBoard ? 'Board' : 'Card'}} Name:</label>
+      <input class="input" type="text" formControlName="name" id="name" />
+    </div>
+    <div class="inputField">
+      <label for="desc">Description:</label>
+      <textarea
+        class="input"
+        name="desc"
+        id="desc"
+        cols="50"
+        rows="4"
+        formControlName="desc"
+      ></textarea>
+    </div>
+    <div class="inputField" *ngIf="data.isBoard">
+      <label class="colorLabel" for="color">Color:</label>
+      <input type="color" [value]="color" formControlName="color" id="color" />
+    </div>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button
+      class="button submitBtn"
+      style="margin-right: 0.5rem; margin-left: auto"
+      mat-button
+      type="submit"
+      [disabled]="form.invalid"
+    >
+      {{data.isModify? "Modify": "Add" }} {{ data.isBoard ? 'Board' : 'Card'}}
+    </button>
+    <button class="button" mat-button mat-dialog-close type="button">
+      Cancel
+    </button>
+  </mat-dialog-actions>
+</form>
+<!-- </div> -->

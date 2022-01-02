@@ -1,0 +1,14 @@
+<div class="container" (dblclick)="showCardDetails()">
+  <div class="heading">
+    {{ card.name }}
+    <span class="icon-container">
+      <img
+        (click)="editCard()"
+        src="assets/edit-icon.svg"
+        class="icon edit-icon"
+      />
+      <img (click)="deleteCard()" src="assets/delete-icon.svg" class="icon" />
+    </span>
+  </div>
+  <div class="desc">{{ card.desc }}</div>
+</div>

@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="heading" (dblclick)="editBoard()">
+    {{ board.name }}
+    <mat-menu #menu="matMenu" xPosition="before" yPosition="below">
+      <button mat-menu-item (click)="addCard()">Add Card</button>
+      <button mat-menu-item (click)="editBoard()">Edit Board Details</button>
+      <button mat-menu-item (click)="deleteBoard()">Delete Board</button>
+    </mat-menu>
+    <button class="menu-btn" mat-flat-button [matMenuTriggerFor]="menu">
+      <img class="three-dots-img" src="assets/three-dots.svg" />
+    </button>
+  </div>
+  <div *ngFor="let card of board.cards">
+    <card
+      cdkDrag
+      [boardId]="board.id"
+      [card]="card"
+      (deleteCardEvent)="deleteCardEvent($event)"
+      (changeCard)="changeCard($event)"
+    ></card>
+  </div>
+</div>
